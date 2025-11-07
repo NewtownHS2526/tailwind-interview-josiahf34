@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity 9: Responsive Design</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 9: Responsive Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="p-4">
-    <h1 class="font-bold">Responsive Heading</h1>
-    <div class="bg-gray-200 p-4">
-        <h2>Sidebar</h2>
-        <p>This should be hidden on mobile</p>
+<body class="p-4 bg-gray-50">
+  <h1 class="font-bold text-2xl mb-4 text-center sm:text-left">
+    Responsive Heading
+  </h1>
+    <div class="flex flex-col sm:flex-row gap-4"></div>
+    <div class="bg-gray-200 p-4 sm:w-1/4 hidden sm:block rounded-lg">
+      <h2 class="font-semibold mb-2">Sidebar</h2>
+      <p>This should be hidden on mobile</p>
     </div>
-    <div class="bg-blue-100 p-4">
-        <div class="bg-white p-4 mb-2">Card 1</div>
-        <div class="bg-white p-4 mb-2">Card 2</div>
-        <div class="bg-white p-4 mb-2">Card 3</div>
+    <div class="bg-blue-100 p-4 sm:w-3/4 rounded-lg">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white p-4 shadow rounded">Card 1</div>
+        <div class="bg-white p-4 shadow rounded">Card 2</div>
+        <div class="bg-white p-4 shadow rounded">Card 3</div>
+      </div>
     </div>
-    <p class="mt-4">This text should be centered on mobile, left-aligned on larger screens</p>
+
+  </div>
+   <p class="mt-6 text-center sm:text-left text-gray-700">
+    This text is centered on mobile and left-aligned on larger screens.
+  </p>
 </body>
 </html>
-

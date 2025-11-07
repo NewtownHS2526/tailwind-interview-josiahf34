@@ -1,28 +1,36 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity 12: Navigation Bar</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity 12: Navigation Bar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
-    <nav class="bg-white">
-        <div class="max-w-7xl">
-            <div class="text-2xl font-bold text-blue-600">Logo</div>
-            <div class="space-x-6">
-                <a href="#" class="text-gray-700">Home</a>
-                <a href="#" class="text-gray-700">About</a>
-                <a href="#" class="text-gray-700">Services</a>
-                <a href="#" class="text-gray-700">Contact</a>
-            </div>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded">Menu</button>
+    <nav class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="text-2xl font-bold text-blue-600">
+          Logo
         </div>
-    </nav>
-    <main class="p-8">
-        <h1 class="text-3xl font-bold mb-4">Welcome</h1>
-        <p>Navigation bar created with Tailwind CSS</p>
-    </main>
+         <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 transition">About</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+        </div>
+        <div class="md:hidden">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300">
+            Menu
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+   <main class="p-8 max-w-7xl mx-auto">
+    <h1 class="text-3xl font-bold mb-4">Welcome</h1>
+    <p class="text-gray-700">Navigation bar created with Tailwind CSS</p>
+  </main>
+
 </body>
 </html>
-
